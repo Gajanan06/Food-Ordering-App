@@ -1,0 +1,168 @@
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f5f5f5;
+}
+
+/* Navbar */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background-color:white;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#ff6600;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+.nav-links li{
+  cursor:pointer;
+  font-weight:500;
+}
+
+/* Search */
+
+.search-container{
+    justify-content:center;
+  margin:20px;
+  display:flex;
+  gap:10px;
+}
+
+.search-container input{
+  padding:8px;
+  width:250px;
+}
+
+.search-container button{
+  padding:8px 12px;
+  border:none;
+  background:#ff6600;
+  color:white;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+/* Restaurant Cards */
+
+.body-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  padding:20px;
+}
+
+.restaurant-card{
+  width:200px;
+  padding:15px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  height: 275px;
+}
+
+.restaurant-card h3{
+  margin:0 0 10px;
+  padding-top : 10px;
+}
+
+/* Shimmer */
+
+.shimmer-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  padding:20px;
+}
+
+.shimmer-card{
+  width:200px;
+  height:275px;
+  background:#e2e2e2;
+  border-radius:10px;
+}
+
+
+.res-img {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+.img-container{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+} 
+
+.res-name {
+    text-align:center;
+}
+
+
+/* Menu Page */
+.menu{
+  padding:20px;
+}
+
+.menu h2{
+  margin-bottom:5px;
+}
+
+.menu h3{
+  margin-top:20px;
+}
+
+.menu-item{
+  display:flex;
+  justify-content:space-between;
+  padding:10px;
+  border-bottom:1px solid #ddd;
+}
+
+
+/* Nav link */
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-link.active {
+  color: #ff5200;
+  font-weight: bold;
+}
+
+.res-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.restaurant-card {
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.restaurant-card:hover {
+  transform: scale(0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
