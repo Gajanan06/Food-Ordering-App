@@ -1,10 +1,19 @@
+
+@import "tailwindcss";
+
+
+
+
+
+
+/*
 body{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
   background:#f5f5f5;
 }
 
-/* Navbar */
+/* Navbar *//*
 
 .navbar{
   display:flex;
@@ -32,7 +41,7 @@ body{
   font-weight:500;
 }
 
-/* Search */
+/* Search *//*
 
 .search-container{
     justify-content:center;
@@ -55,7 +64,7 @@ body{
   border-radius:5px;
 }
 
-/* Restaurant Cards */
+/* Restaurant Cards *//*
 
 .body-container{
   display:flex;
@@ -78,8 +87,7 @@ body{
   padding-top : 10px;
 }
 
-/* Shimmer */
-
+/* Shimmer *//*
 .shimmer-container{
   display:flex;
   flex-wrap:wrap;
@@ -112,7 +120,7 @@ body{
 }
 
 
-/* Menu Page */
+/* Menu Page */ /*
 .menu{
   padding:20px;
 }
@@ -133,7 +141,7 @@ body{
 }
 
 
-/* Nav link */
+/* Nav link */ /*
 
 .nav-link {
   text-decoration: none;
@@ -168,7 +176,7 @@ a {
 }
 
 
-/* Contact Page */
+/* Contact Page */ /*
 
 .contact-page{
   padding:20px;
@@ -176,18 +184,18 @@ a {
 }
 
 
-/* Contact Page */
+/* Contact Page */ /*
 
 .contact-page{
   padding:20px;
   text-align:center;
 }
 
-/* Support Section */
+/* Support Section */ /*
 
 .support-container{
   margin-top:20px;
-  /* display:flex; */
+  /* display:flex; */ /*
   flex-wrap:wrap;
   gap:20px;
   justify-content:center;
@@ -208,4 +216,4 @@ a {
 
 .support-card h3{
   margin-bottom:10px;
-}
+} */

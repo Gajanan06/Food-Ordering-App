@@ -26,7 +26,7 @@ const Body = () => {
       // console.log(json);
 
       const restaurantList =
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
 
       setRestaurants(restaurantList);
       setFilteredRestaurants(restaurantList);
@@ -45,7 +45,7 @@ const Body = () => {
 
   const OnlineStatus = useOnlineStatus();
 
-  if (OnlineStatus === false ) return <h2>Check your Internet Connection</h2>
+  if (OnlineStatus === false ) return <h2 className="text-center mt-30 font-bold">Check your Internet Connection</h2>
 
   if (restaurants.length === 0) return <Shimmer />;
 
@@ -55,9 +55,10 @@ const Body = () => {
 
     <div>
 
-      <div className="search-container">
+      <div className="flex justify-center gap-3 bg-gray-100">
 
         <input
+          className="p-[5px] w-64 m-5 mr-1 border bg-white border-gray-300 rounded outline-none"
           type="text"
           placeholder="Search restaurants..."
           value={searchText}
@@ -65,6 +66,7 @@ const Body = () => {
         />
 
         <button
+          className="px-4 ml-2 m-5 mr-1 font-medium cursor-pointer bg-orange-500 text-white rounded"
           onClick={() => {
 
             const filtered = restaurants.filter((res) =>
@@ -79,6 +81,7 @@ const Body = () => {
         </button>
 
         <button
+          className="px-3  m-5 font-medium cursor-pointer bg-orange-500 text-white rounded"
           onClick={() => {
 
             const filtered = restaurants.filter(
@@ -94,11 +97,12 @@ const Body = () => {
 
       </div>
 
-      <div className="body-container">
+
+      <div className="flex flex-wrap gap-5 p-5 bg-gray-100">
 
         {filteredRestaurants.map((restaurant) => (
           
-          <Link className="res-link" key= {restaurant.info.id} to={"./menu/" + restaurant.info.id}>
+          <Link className="no-underline text-inherit" key= {restaurant.info.id} to={"./menu/" + restaurant.info.id}>
 
           <RestaurantCard 
             key={restaurant.info.id}
