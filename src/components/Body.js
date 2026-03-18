@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { SWIGGY_API, CDN_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
 
@@ -25,7 +26,7 @@ const Body = () => {
       // console.log(json);
 
       const restaurantList =
-        json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
 
       setRestaurants(restaurantList);
       setFilteredRestaurants(restaurantList);
@@ -38,9 +39,17 @@ const Body = () => {
 
   };
 
+  
+
   if (error) return <h2>{error}</h2>;
 
+  const OnlineStatus = useOnlineStatus();
+
+  if (OnlineStatus === false ) return <h2>Check your Internet Connection</h2>
+
   if (restaurants.length === 0) return <Shimmer />;
+
+  
 
   return (
 

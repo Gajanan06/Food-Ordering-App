@@ -4,4 +4,4 @@ export const SWIGGY_API =
 export const CDN_URL =
 "https://media-assets.swiggy.com/swiggy/image/upload/";
 
-export const MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=15.8636032&lng=74.5214821&restaurantId=";
+export const MENU_URL = "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=15.8636032&lng=74.5214821&restaurantId=";
