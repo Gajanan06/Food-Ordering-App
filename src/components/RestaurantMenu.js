@@ -1,3 +1,4 @@
+/*
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Shimmer from './Shimmer';
@@ -51,4 +52,35 @@ const RestaurantMenu = () => {
   );
 };
 
-export default RestaurantMenu
+export default RestaurantMenu */
+
+
+import { MENU_DATA } from "../utils/mockRestaurantMenu";
+import MenuAccordion from "./MenuAccordion";
+
+const RestaurantMenu = () => {
+
+  const data = MENU_DATA;
+
+  return (
+    <>
+    <div className="">
+    <div className="max-w-md mx-auto mt-5 ">
+
+      <h2 className=" text-center text-xl font-bold">
+        {data.restaurant.name}
+      </h2>
+
+      <p className="text-center text-sm text-gray-600">
+        {data.restaurant.cuisines.join(", ")}
+      </p>
+
+      <MenuAccordion categories={data.categories} />
+
+    </div>
+    </div>
+    </>
+  );
+};
+
+export default RestaurantMenu;
