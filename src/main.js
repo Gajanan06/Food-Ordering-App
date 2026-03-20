@@ -9,6 +9,7 @@ import Error from "./components/Error";
 import NotFound from "./components/NotFound";
 import RestaurantMenu from "./components/RestaurantMenu";
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+import Cart from "./components/Cart";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "*",
         element: <NotFound />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ]
   }

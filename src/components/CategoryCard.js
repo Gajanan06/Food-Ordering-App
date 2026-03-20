@@ -1,4 +1,9 @@
+import { useDispatch } from "react-redux";
+import { addItems } from "../utils/CartSlice";
+
 const CategoryCard = ({ category, showItems, handleClick }) => {
+
+  const dispatch = useDispatch();
 
   return (
     <div className="mb-3 border rounded-lg">
@@ -17,6 +22,9 @@ const CategoryCard = ({ category, showItems, handleClick }) => {
             <div key={item.id} className="flex justify-between py-2 border-b">
               <span>{item.name}</span>
               <span>₹{item.price / 100}</span>
+              <button className="cursor-pointer border bg-gray-500 text-white" onClick={() =>{
+                dispatch(addItems(item))
+              }}>Add +</button>
             </div>
           ))}
         </div>
