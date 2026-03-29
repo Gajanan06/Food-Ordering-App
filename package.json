@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is food delivery app",
   "scripts": {
+    "start": "parcel index.html",
     "test": "jest"
   },
   "author": "Gajanan Nilajkar",
@@ -11,6 +12,7 @@
     "@reduxjs/toolkit": "^2.11.2",
     "@tailwindcss/postcss": "^4.2.2",
     "@testing-library/react": "^16.3.2",
+    "jest": "^30.3.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-redux": "^9.2.0",
@@ -18,6 +20,12 @@
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5",
+    "@testing-library/jest-dom": "^6.9.1",
+    "babel-jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
     "parcel": "^2.16.4"
   }
 }

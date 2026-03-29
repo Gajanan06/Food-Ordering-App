@@ -60,6 +60,7 @@ const Body = () => {
         <input
           className="p-[5px] w-64 m-5 mr-1 border bg-white border-gray-300 rounded outline-none"
           type="text"
+          data-testid="searchInput"
           placeholder="Search restaurants..."
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
@@ -67,6 +68,7 @@ const Body = () => {
 
         <button
           className="px-4 ml-2 m-5 mr-1 font-medium cursor-pointer bg-orange-500 text-white rounded"
+           data-testid="searchBtn"
           onClick={() => {
 
             const filtered = restaurants.filter((res) =>
@@ -82,6 +84,7 @@ const Body = () => {
 
         <button
           className="px-3  m-5 font-medium cursor-pointer bg-orange-500 text-white rounded"
+          data-testid="resCard"
           onClick={() => {
 
             const filtered = restaurants.filter(
